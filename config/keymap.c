@@ -120,28 +120,28 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
 #define L_ADJUSTS 64
 
 void oled_render_layer_state(void) {
-    oled_write_P(PSTR("Layer: "), false);
+    oled_write_P(PSTR("Layer\n"), false);
     switch (layer_state) {
         case L_BASE:
-            oled_write_ln_P(PSTR("Default"), false);
+            oled_write_ln_P(PSTR("Defau"), false);
             break;
         case L_NUMPAD:
-            oled_write_ln_P(PSTR("Numpad"), false);
+            oled_write_ln_P(PSTR("Num"), false);
             break;
         case L_NAVIGATE:
-            oled_write_ln_P(PSTR("Navigate"), false);
+            oled_write_ln_P(PSTR("Nav"), false);
             break;
         case L_SYMBOLS:
-            oled_write_ln_P(PSTR("Symbols"), false);
+            oled_write_ln_P(PSTR("Symbs"), false);
             break;
         case L_FUNCTIONS:
-            oled_write_ln_P(PSTR("Functions"), false);
+            oled_write_ln_P(PSTR("Functs"), false);
             break;
         case L_MULTIMEDIA:
-            oled_write_ln_P(PSTR("Multimedia"), false);
+            oled_write_ln_P(PSTR("Media"), false);
             break;
         case L_ADJUSTS:
-            oled_write_ln_P(PSTR("Adjust"), false);
+            oled_write_ln_P(PSTR("Adjs"), false);
             break;
     }
 }
